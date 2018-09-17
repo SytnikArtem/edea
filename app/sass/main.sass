@@ -885,12 +885,12 @@ table
 			z-index: -1
 			border-radius: 5px 5px 0 0
 			&_dark
-				background: #424242
+				background: #1C3D77
 				// height: 100px
 			&_blue
 				background: #1C3D77
 		&_general
-			padding: 30px 0 25px
+			padding: 40px 0 25px
 		&_network
 			padding: 40px 0 20px
 		&-list
@@ -1120,32 +1120,53 @@ table
 		display: flex
 		padding: 0 10px
 		justify-content: space-between
+		&_fluid
+			max-width: 100%
+			padding: 0 30px
 	&-header
 		background: #424242
 		padding: 10px 0 5px
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+		&-jingle
+			width: 18px
+		&-letter
+			width: 20px
+		&-search
+			width: 21px
+		&-path
+			fill: #646464
+			transition: fill .5s ease
 		&-right
 			display: flex
 			justify-content: space-between
 			align-items: center
 		&-item
-			margin-left: 30px
+			margin-left: 40px
 			position: relative
 			min-height: 23px
 			display: flex
 			align-items: center
+			cursor: pointer
+
+			&:hover
+				.general-header-path
+					fill: #fff
 			&_last
-				padding-right: 20px
-				margin-left: 50px
+				padding-right: 30px
+				margin-left: 65px
+			&_big
+				margin-left: 60px
 			&_marg
 				margin-right: 15px
+				margin-left: 45px
 		&-drop
 			width: 10px
 			height: 10px
 			border: 5px solid transparent
 			border-top: 5px solid #fff
 			position: absolute
-			right: 3px
-			top: 50%
+			right: 7px
+			top: 55%
 			transform: translateY(-50%)
 			cursor: pointer
 		&-btn
@@ -1155,28 +1176,72 @@ table
 			width: 117px
 			height: 36px
 			line-height: 36px
-			background: #5FD08E
+			background: #44B774
 			border-radius: 5px
 			border: none
 			outline: none
 			transition: background-color .5s ease
 			cursor: pointer
 			&:hover
-				background: darken(#5FD08E, 10%)
+				background: darken(#44B774, 5%)
+		&-left
+			display: flex
+			align-items: center
+		&-menu
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-left: 40px
+			&-item
+				color: #646464
+				font-weight: bold
+				padding: 0 30px
+			&-link
+				color: inherit
+				text-decoration: none
+				transition: color .5s ease
+				&:hover
+					color: #F4F7FE
 	&-main
-		margin-top: 20px
+		margin-top: 40px
 	&-left
 		width: 340px
 		&-top
 			background: #fff
 			border-radius: 5px 5px 0 0
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
 		&-block
-			padding: 0px 20px 25px 20px
+			padding: 0px 20px 20px 20px
 			&_network
 				padding-bottom: 10px
 		&-title
 			font-size: 16px
 			font-weight: bold
+			text-align: center
+		&-button
+			&-svg
+				width: 9px
+				display: inline-block
+				cursor: pointer
+				margin-left: 5px
+				position: relative
+				top: -1px
+			&-path
+				fill: #424242
+		&-bottom
+			margin-top: 15px
+			&-btn
+				background: #F9636C
+				width: 100%
+				height: 42px
+				line-height: 42px
+				font-weight: bold
+				text-align: left
+				font-size: 16px
+				padding: 0 20px
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+				&:hover
+					background: darken(#F9636C, 10%)
 		&-subtitle
 			font-size: 14px
 			line-height: 21px
@@ -1322,6 +1387,7 @@ table
 		&-top
 			background: #fff
 			border-radius: 5px
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
 		&-menu
 			display: flex
 		&-item
@@ -1339,6 +1405,34 @@ table
 			&.active
 				border-bottom: 3px solid #4D94F4
 				color: #4D94F4
+		&-invite
+			background: #44B774
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			border-radius: 5px
+			padding: 15px 30px 20px 20px
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			margin-bottom: 20px
+			&-text
+				color: #fff
+				font-weight: 900
+				font-size: 24px
+				margin-top: 10px
+			&-btn
+				background: #F4F7FE
+				font-weight: bold
+				border: none
+				outline: none
+				cursor: pointer
+				height: 36px
+				line-height: 36px
+				border-radius: 5px
+				width: 165px
+				font-size: 16px
+				transition: background .5s ease
+				&:hover
+					background: darken(#F4F7FE, 3%)
 	&-right
 		width: 340px
 		&-first
@@ -1348,6 +1442,9 @@ table
 			background: #fff
 			border-radius: 5px
 			margin-top: 20px
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			&:first-child
+				margin-top: 0
 		&-title
 			font-size: 16px
 			font-weight: bold
@@ -1360,7 +1457,7 @@ table
 			align-items: center
 			justify-content: flex-start
 			margin-bottom: 20px
-			&_last
+			&:last-child
 				margin-bottom: 0
 		&-text
 			margin-left: 15px
@@ -1403,46 +1500,52 @@ table
 			padding-right: 10px
 		&-right
 			padding-left: 10px
-			padding-right: 20px
 			position: relative
 			z-index: 2
 			background: #F3F3F3
-			&::after
-				position: absolute
-				content: ''
-				border: 5px solid transparent
-				border-top: 5px solid #424242
-				right: 0px
-				top: 6px
-				cursor: pointer
+			//&::after
+			//	position: absolute
+			//	content: ''
+			//	border: 5px solid transparent
+			//	border-top: 5px solid #424242
+			//	right: 0px
+			//	top: 6px
+			//	cursor: pointer
 	&_circle
 		background: #9E9E9E
 	&-post
 		background: #fff
 		border-radius: 5px
 		margin-top: 20px
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
 		&_first
 			margin-top: 0
 		&-top
-			padding: 15px 25px
+			padding: 10px 25px
 			position: relative
 			display: flex
 			justify-content: flex-start
 			align-items: center
 			border-bottom: 1px solid #707070
 		&-more
-			top: 50px
-			right: 30px
+			top: 20px
+			right: 25px
 		&-info
 			margin-left: 15px
 			margin-top: 5px
+			width: 100%
 		&-name
 			font-weight: bold
+			margin-top: 5px
 			margin-bottom: 5px
 		&-subname
 			font-size: 14px
 			color: #9E9E9E
 			margin-bottom: 10px
+		&-flex
+			display: flex
+			justify-content: space-between
+			width: 100%
 		&-date
 			font-size: 14px
 			color: #4D94F4
@@ -1451,11 +1554,11 @@ table
 			margin-top: 5px
 			padding: 0 15px 0 20px
 		&-main
-			padding: 20px 0px
+			padding: 10px 0px
 		&-bottom
 			display: flex
 			justify-content: space-between
-			margin-top: 25px
+			margin-top: 15px
 			padding: 0 15px 0 20px
 			&_left
 				width: 110px
@@ -1597,6 +1700,8 @@ table
 	height: 50px
 	border-radius: 50%
 	background: rgba(#2d41ff, 0.18)
+	&_big
+		width: 54px
 .ins-video
 	display: none
 	position: fixed
@@ -1788,7 +1893,8 @@ table
 .general-post-photo
 	border-radius: 50%
 	font-size: 0
-	width: 61px
+	width: 50px
+	flex-shrink: 0
 .general-comment-left
 	width: 50px
 	height: 50px
