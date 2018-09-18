@@ -1586,9 +1586,9 @@
 										<p class="edit-content-description">It will help you connect and collaborate with professionals around you</p>
 									</div>
 								</div>
-								<div class="edit-link front-link_right">
-									<button type="button" class="front-form-btn btn edit-btn">Save</button>
-								</div>
+								<!--<div class="edit-link front-link_right">-->
+									<!--<button type="button" class="front-form-btn btn edit-btn">Save</button>-->
+								<!--</div>-->
 							</form>
 						</div>
 					</div>
@@ -1734,11 +1734,7 @@
 										<div class="edit-lang edit-lang_big">Comissioning <span class="edit-lang-close"></span></div>
 									</div>
 								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-										<p class="edit-content-title edit-content-title_nopad">Level of expertise</p>
-									</div>
-								</div>
+								<h4 class="edit-subtitle edit-title_marg">Level of expertise</h4>
 								<div class="edit-content-row edit-content-row_mdmarg">
 									<div class="edit-content-left">
 										<p class="edit-content-title edit-content-title_nopad">Landscape design</p>
@@ -1779,9 +1775,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="edit-link front-link_right edit-link_mdmarg">
-									<button type="button" class="front-form-btn btn edit-btn">Save</button>
-								</div>
+								<!--<div class="edit-link front-link_right edit-link_mdmarg">-->
+									<!--<button type="button" class="front-form-btn btn edit-btn">Save</button>-->
+								<!--</div>-->
 							</form>
 						</div>
 
@@ -1804,14 +1800,32 @@
 										<p class="edit-content-title">Experience</p>
 									</div>
 									<div class="edit-content-right">
-										<input type="text" name="company" class="form-input edit-input edit-input_custom" placeholder="company 1">
-									</div>
-								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-									</div>
-									<div class="edit-content-right">
-										<input type="text" name="company" class="form-input edit-input edit-input_custom" placeholder="company 2">
+										<div class="edit-content-right-flex">
+											<div class="edit-content-element">
+												<p class="edit-content-element-text">company 1</p>
+												<div class="edit-content-element-btn">
+													<div class="edit-content-element-pencil">
+														<img src="img/pencil.svg" alt="" class="pencil_show" width="14">
+														<img src="img/pencil2.svg" alt="" class="pencil_hide" width="18">
+													</div>
+													<div class="edit-content-element-line">
+														<img src="img/line.svg" alt="" width="18">
+													</div>
+												</div>
+											</div>
+											<div class="edit-content-element">
+												<p class="edit-content-element-text">company 2</p>
+												<div class="edit-content-element-btn">
+													<div class="edit-content-element-pencil">
+														<img src="img/pencil.svg" alt="" class="pencil_show" width="14">
+														<img src="img/pencil2.svg" alt="" class="pencil_hide" width="18">
+													</div>
+													<div class="edit-content-element-line">
+														<img src="img/line.svg" alt="" width="18">
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="edit-content-row">
@@ -1835,40 +1849,83 @@
 										<p class="edit-content-title edit-content-title_normal">From year</p>
 									</div>
 									<div class="edit-content-right edit-content-right_flex">
-										<input type="text" name="start_year" class="form-input edit-input edit-input_min">
+										<div class="select-container select-container_nomarg">
+											<select class="front-form-select edit-select edit-select_min" required="">
+												<option value="" disabled="" selected="" hidden="" class="front-form-option"></option>
+												<option value="2000" class="front-form-option">2000</option>
+												<option value="2001" class="front-form-option">2001</option>
+												<option value="2002" class="front-form-option">2002</option>
+												<option value="2003" class="front-form-option">2003</option>
+												<option value="2004" class="front-form-option">2004</option>
+												<option value="2005" class="front-form-option">2005</option>
+											</select>
+										</div>
 										<div class="edit-custom-text">To</div>
-										<input type="text" name="finish_year" class="form-input edit-input edit-input_min">
+										<div class="select-container select-container_nomarg">
+											<select class="front-form-select edit-select edit-select_min" required="">
+												<option value="" disabled="" selected="" hidden="" class="front-form-option"></option>
+												<option value="2000" class="front-form-option">2000</option>
+												<option value="2001" class="front-form-option">2001</option>
+												<option value="2002" class="front-form-option">2002</option>
+												<option value="2003" class="front-form-option">2003</option>
+												<option value="2004" class="front-form-option">2004</option>
+												<option value="2005" class="front-form-option">2005</option>
+											</select>
+										</div>
 									</div>
 								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-										<p class="edit-content-title edit-content-title_normal">Job description</p>
-									</div>
-									<div class="edit-content-right">
-										<input type="text" name="description" class="form-input edit-input">
-									</div>
+								<!--<div class="edit-content-row">-->
+									<!--<div class="edit-content-left">-->
+										<!--<p class="edit-content-title edit-content-title_normal">Job description</p>-->
+									<!--</div>-->
+									<!--<div class="edit-content-right">-->
+										<!--<input type="text" name="description" class="form-input edit-input">-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="edit-content-row edit-content-row_mdmarg">-->
+									<!--<div class="edit-content-left">-->
+										<!--<div class="front-add-btn front-add-btn_marg">Add Experience</div>-->
+									<!--</div>-->
+									<!--<div class="edit-content-right">-->
+										<!--<div class="edit-lang edit-lang_big edit-lang_bigger">Company name <span class="edit-lang-close"></span></div>-->
+									<!--</div>-->
+								<!--</div>-->
+								<div class="edit-link front-link_right edit-link_mdmarg">
+									<button type="button" class="front-form-btn btn edit-btn">Add</button>
+									<button type="button" class="front-form-btn btn edit-btn edit-btn_cancel">Cancel</button>
+									<button type="button" class="front-form-btn btn edit-btn edit-btn_save">Save</button>
 								</div>
-								<div class="edit-content-row edit-content-row_mdmarg">
-									<div class="edit-content-left">
-										<div class="front-add-btn front-add-btn_marg">Add Experience</div>
-									</div>
-									<div class="edit-content-right">
-										<div class="edit-lang edit-lang_big edit-lang_bigger">Company name <span class="edit-lang-close"></span></div>
-									</div>
-								</div>
-								<div class="edit-content-row border-top edit-content-row_smmarg border-top_sm">
+								<div class="edit-content-row edit-content-row_smmarg border-top_sm border-top">
 									<div class="edit-content-left">
 										<p class="edit-content-title">Education</p>
 									</div>
 									<div class="edit-content-right">
-										<input type="text" name="company" class="form-input edit-input edit-input_custom" placeholder="company 1">
-									</div>
-								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-									</div>
-									<div class="edit-content-right">
-										<input type="text" name="company" class="form-input edit-input edit-input_custom" placeholder="company 2">
+										<div class="edit-content-right-flex">
+											<div class="edit-content-element">
+												<p class="edit-content-element-text">education 1</p>
+												<div class="edit-content-element-btn">
+													<div class="edit-content-element-pencil">
+														<img src="img/pencil.svg" alt="" class="pencil_show" width="14">
+														<img src="img/pencil2.svg" alt="" class="pencil_hide" width="18">
+													</div>
+													<div class="edit-content-element-line">
+														<img src="img/line.svg" alt="" width="18">
+													</div>
+												</div>
+											</div>
+											<div class="edit-content-element">
+												<p class="edit-content-element-text">education 2</p>
+												<div class="edit-content-element-btn">
+													<div class="edit-content-element-pencil">
+														<img src="img/pencil.svg" alt="" class="pencil_show" width="14">
+														<img src="img/pencil2.svg" alt="" class="pencil_hide" width="18">
+													</div>
+													<div class="edit-content-element-line">
+														<img src="img/line.svg" alt="" width="18">
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="edit-content-row edit-content-row_mdmarg">
@@ -1889,47 +1946,63 @@
 								</div>
 								<div class="edit-content-row">
 									<div class="edit-content-left">
-										<p class="edit-content-title edit-content-title_normal">Year of graduation</p>
+										<p class="edit-content-title edit-content-title_normal">From year</p>
 									</div>
-									<div class="edit-content-right">
-										<div class="select-container select-container_nomarg select-container_inline">
+									<div class="edit-content-right edit-content-right_flex">
+										<div class="select-container select-container_nomarg">
 											<select class="front-form-select edit-select edit-select_min" required="">
-												<option value="" disabled="" selected="" hidden="" class="front-form-option "></option>
-												<option value="1" class="front-form-option">1</option>
-												<option value="2" class="front-form-option">2</option>
-												<option value="3" class="front-form-option">3</option>
+												<option value="" disabled="" selected="" hidden="" class="front-form-option"></option>
+												<option value="2000" class="front-form-option">2000</option>
+												<option value="2001" class="front-form-option">2001</option>
+												<option value="2002" class="front-form-option">2002</option>
+												<option value="2003" class="front-form-option">2003</option>
+												<option value="2004" class="front-form-option">2004</option>
+												<option value="2005" class="front-form-option">2005</option>
+											</select>
+										</div>
+										<div class="edit-custom-text">To</div>
+										<div class="select-container select-container_nomarg">
+											<select class="front-form-select edit-select edit-select_min" required="">
+												<option value="" disabled="" selected="" hidden="" class="front-form-option"></option>
+												<option value="2000" class="front-form-option">2000</option>
+												<option value="2001" class="front-form-option">2001</option>
+												<option value="2002" class="front-form-option">2002</option>
+												<option value="2003" class="front-form-option">2003</option>
+												<option value="2004" class="front-form-option">2004</option>
+												<option value="2005" class="front-form-option">2005</option>
 											</select>
 										</div>
 									</div>
 								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-										<p class="edit-content-title edit-content-title_normal">Honours and Awards</p>
-									</div>
-									<div class="edit-content-right">
-										<input type="text" name="awards" class="form-input edit-input">
-									</div>
-								</div>
-								<div class="edit-content-row">
-									<div class="edit-content-left">
-										<p class="edit-content-title edit-content-title_normal">Field of study/Specialization</p>
-									</div>
-									<div class="edit-content-right">
-										<input type="text" name="specialization" class="form-input edit-input">
-									</div>
-								</div>
-								<div class="edit-content-row edit-content-row_mdmarg">
-									<div class="edit-content-left">
-										<div class="front-add-btn front-add-btn_marg">Add Education</div>
-									</div>
-									<div class="edit-content-right">
-										<div class="edit-lang edit-lang_big edit-lang_">Institution/University <span class="edit-lang-close"></span></div>
-									</div>
-								</div>
+								<!--<div class="edit-content-row">-->
+									<!--<div class="edit-content-left">-->
+										<!--<p class="edit-content-title edit-content-title_normal">Honours and Awards</p>-->
+									<!--</div>-->
+									<!--<div class="edit-content-right">-->
+										<!--<input type="text" name="awards" class="form-input edit-input">-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="edit-content-row">-->
+									<!--<div class="edit-content-left">-->
+										<!--<p class="edit-content-title edit-content-title_normal">Field of study/Specialization</p>-->
+									<!--</div>-->
+									<!--<div class="edit-content-right">-->
+										<!--<input type="text" name="specialization" class="form-input edit-input">-->
+									<!--</div>-->
+								<!--</div>-->
+								<!--<div class="edit-content-row edit-content-row_mdmarg">-->
+									<!--<div class="edit-content-left">-->
+										<!--<div class="front-add-btn front-add-btn_marg">Add Education</div>-->
+									<!--</div>-->
+									<!--<div class="edit-content-right">-->
+										<!--<div class="edit-lang edit-lang_big edit-lang_">Institution/University <span class="edit-lang-close"></span></div>-->
+									<!--</div>-->
+								<!--</div>-->
 								<div class="edit-link front-link_right edit-link_mdmarg">
-									<button type="button" class="front-form-btn btn edit-btn">Save</button>
+									<button type="button" class="front-form-btn btn edit-btn">Add</button>
+									<button type="button" class="front-form-btn btn edit-btn edit-btn_cancel">Cancel</button>
+									<button type="button" class="front-form-btn btn edit-btn edit-btn_save">Save</button>
 								</div>
-
 							</form>
 						</div>
 					</div>
@@ -2011,9 +2084,9 @@
 								</div>
 
 
-								<div class="edit-link front-link_right edit-link_mdmarg">
-									<button type="button" class="front-form-btn btn edit-btn">Save</button>
-								</div>
+								<!--<div class="edit-link front-link_right edit-link_mdmarg">-->
+									<!--<button type="button" class="front-form-btn btn edit-btn">Save</button>-->
+								<!--</div>-->
 
 							</form>
 						</div>
@@ -3488,8 +3561,8 @@
 									<!--<li class="edit-photo-item">Delete picture</li>-->
 								<!--</ul>-->
 							<!--</div>-->
-							<!--<div class="general-left-block general-left-block_network">-->
-								<!--<h3 class="general-left-title">Alex Smith</h3>-->
+							<!--<div class="general-left-block general-left-block_user">-->
+								<!--<h3 class="general-left-title general-left-title_left">Alex Smith</h3>-->
 								<!--<p class="general-left-subtitle">Profession, Employment situation</p>-->
 								<!--<p class="general-left-subtitle">Company name</p>-->
 								<!--<p class="general-left-subtitle">New york, USA</p>-->
@@ -3499,8 +3572,197 @@
 								<!--<p class="general-left-subtitle network-text network-text_site"><a href="">www.mywebsite.com</a></p>-->
 							<!--</div>-->
 						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Services</h4>-->
+							<!--<ul class="user-service-list">-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Conceptual design</p>-->
+										<!--<p class="user-left-number">15</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Schematic Design</p>-->
+										<!--<p class="user-left-number">22</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Feasibility design study</p>-->
+										<!--<p class="user-left-number">9</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Multi-objective design optimization</p>-->
+										<!--<p class="user-left-number">6</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Design development</p>-->
+										<!--<p class="user-left-number">12</p>-->
+									<!--</div>-->
+								<!--</li>-->
+							<!--</ul>-->
+							<!--<p class="user-left-more">View more</p>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Skills</h4>-->
+							<!--<ul class="user-service-list">-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Conceptual design</p>-->
+										<!--<p class="user-left-number">15</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Schematic Design</p>-->
+										<!--<p class="user-left-number">22</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Feasibility design study</p>-->
+										<!--<p class="user-left-number">9</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Multi-objective design optimization</p>-->
+										<!--<p class="user-left-number">6</p>-->
+									<!--</div>-->
+								<!--</li>-->
+								<!--<li class="user-service-item">-->
+									<!--<div class="general-right-ok">-->
+										<!--<img src="img/plus3.svg" alt="">-->
+									<!--</div>-->
+									<!--<div class="user-service-flex">-->
+										<!--<p class="user-left-text">Design development</p>-->
+										<!--<p class="user-left-number">12</p>-->
+									<!--</div>-->
+								<!--</li>-->
+							<!--</ul>-->
+							<!--<p class="user-left-more">View more</p>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Languages</h4>-->
+							<!--<div class="user-lang">-->
+								<!--<p class="user-lang-item">English</p>-->
+								<!--<p class="user-lang-item">French</p>-->
+								<!--<p class="user-lang-item">Hebrew</p>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Follow me</h4>-->
+							<!--<div class="user-soc">-->
+								<!--<div class="user-soc-item">-->
+									<!--<img src="img/soc.svg" alt="">-->
+								<!--</div>-->
+								<!--<div class="user-soc-item">-->
+									<!--<img src="img/soc2.svg" alt="">-->
+								<!--</div>-->
+								<!--<div class="user-soc-item">-->
+									<!--<img src="img/soc3.svg" alt="">-->
+								<!--</div>-->
+								<!--<div class="user-soc-item">-->
+									<!--<img src="img/soc4.svg" alt="">-->
+								<!--</div>-->
+								<!--<div class="user-soc-item">-->
+									<!--<img src="img/soc5.svg" alt="">-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">About me</h4>-->
+							<!--<div class="user-left-about">-->
+								<!--<p class="user-left-text current-height">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. web design, typography, layout, and printing in place of English to emphasise design elements over web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text.</p>-->
+							<!--</div>-->
+							<!--<p class="user-left-more">View more</p>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Experience</h4>-->
+							<!--<div class="user-left-slide">-->
+								<!--<div class="user-left-row">-->
+									<!--<div class="user-left-row-left">-->
+										<!--<h4 class="user-left-row-name">Company Name</h4>-->
+										<!--<p class="user-left-row-text">Job Description</p>-->
+									<!--</div>-->
+									<!--<div class="user-left-row-number">2010 - 2012</div>-->
+								<!--</div>-->
+								<!--<div class="user-left-row">-->
+									<!--<div class="user-left-row-left">-->
+										<!--<h4 class="user-left-row-name">Company Name</h4>-->
+										<!--<p class="user-left-row-text">Job Description</p>-->
+									<!--</div>-->
+									<!--<div class="user-left-row-number">2010 - 2012</div>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<p class="user-left-more">View more</p>-->
+						<!--</div>-->
+						<!--<div class="user-left-second">-->
+							<!--<h4 class="general-right-title">Education</h4>-->
+							<!--<div class="user-left-slide">-->
+								<!--<div class="user-left-row">-->
+									<!--<div class="user-left-row-left">-->
+										<!--<h4 class="user-left-row-name">Institute Name</h4>-->
+										<!--<p class="user-left-row-text">Degree name</p>-->
+									<!--</div>-->
+									<!--<div class="user-left-row-number">2010 - 2012</div>-->
+								<!--</div>-->
+								<!--<div class="user-left-row">-->
+									<!--<div class="user-left-row-left">-->
+										<!--<h4 class="user-left-row-name">Institute Name</h4>-->
+										<!--<p class="user-left-row-text">Degree name</p>-->
+									<!--</div>-->
+									<!--<div class="user-left-row-number">2008 - 2010</div>-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<p class="user-left-more">View more</p>-->
+						<!--</div>-->
 					<!--</div>-->
-					<!--<div class="user-right"></div>-->
+					<!--<div class="user-right">-->
+						<!--<div class="user-menu">-->
+							<!--<ul class="user-menu-list">-->
+								<!--<li class="user-menu-item">Overview</li>-->
+								<!--<li class="user-menu-item">Projects</li>-->
+								<!--<li class="user-menu-item">Articles</li>-->
+								<!--<li class="user-menu-item">Products</li>-->
+								<!--<li class="user-menu-item">Courses</li>-->
+								<!--<li class="user-menu-item">Events</li>-->
+								<!--<li class="user-menu-item">Reviews</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
 				<!--</div>-->
 
 			<!--</div>-->
