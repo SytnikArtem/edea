@@ -213,6 +213,9 @@ table
 		font-size: 20px
 		font-weight: bold
 		display: inline-block
+		background: #44B774
+		&:hover
+			background: darken(#44B774, 5%)
 
 .second
 	display: none
@@ -816,12 +819,11 @@ table
 			font-size: 16px
 			font-weight: bold
 .edit
-	padding: 100px 0 100px
 	background: #F5F5F5
 	&-container
 		width: 100%
 		max-width: 1500px
-		margin: 0 auto
+		margin: 30px auto 0
 		display: flex
 		padding: 0 10px
 		justify-content: flex-start
@@ -848,12 +850,13 @@ table
 		&-color
 			display: flex
 			justify-content: space-between
+
 	&-color
-		width: 24px
-		height: 24px
+		width: 38px
+		height: 38px
 		cursor: pointer
 		border-radius: 50%
-		margin-top: 5px
+		margin-right: 22px
 		&-first
 			background: #E2E2E2
 		&-second
@@ -939,6 +942,7 @@ table
 		width: 760px
 		background: #fff
 		border-radius: 5px
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16)
 		&-list
 			display: flex
 			justify-content: space-between
@@ -959,17 +963,30 @@ table
 				border-bottom: 3px solid #4D94F4
 				color: #4D94F4
 	&-title
+		font-size: 28px
+		font-weight: bold
+		padding: 20px 40px
+		border-bottom: 1px solid rgba(132, 132, 132, 0.3)
+	&-subtitle
 		font-size: 20px
 		font-weight: 300
 		color: #9E9E9E
 		margin-top: 15px
 		line-height: 30px
+		padding: 0 40px
 		&_marg
 			margin-top: 25px
 			padding-top: 30px
 	&-content
-		padding: 10px 40px 30px 40px
+		padding: 0
 		display: none
+		&-container
+			padding: 10px 0px 30px 0px
+		&-color
+			display: flex
+			justify-content: flex-start
+			padding: 30px 40px
+			border-bottom: 1px solid rgba(132, 132, 132, 0.3)
 		&.active
 			display: block
 		&-title
@@ -984,7 +1001,7 @@ table
 			display: flex
 			justify-content: space-between
 			margin-top: 30px
-			padding-right: 50px
+			padding: 0 90px 0 40px
 			&_smmarg
 				margin-top: 10px
 			&_mdmarg
@@ -1006,6 +1023,10 @@ table
 			line-height: 21px
 			font-weight: 300
 			margin-top: 10px
+		&-mail
+			font-weight: 300
+			font-size: 14px
+			line-height: 21px
 			&_big
 				margin-top: 15px
 	&-input
@@ -1015,6 +1036,18 @@ table
 		margin-top: 0
 		padding: 0 10px
 		color: #424242
+		&_custom
+			background-color: #E2E2E2
+			background-image: url(../img/line.svg), url(../img/pencil.svg)
+			background-repeat: no-repeat
+			background-position: right 10px center, right 40px center
+			background-size: 18px 18px, 14px 19px
+			&:focus
+				//background: #fff
+				background-image: url(../img/line.svg), url(../img/pencil2.svg)
+				background-repeat: no-repeat
+				background-position: right 10px center, right 40px center
+				background-size: 18px 18px, 18px 18px
 		&_md
 			width: 180px
 		&_sm
@@ -1096,6 +1129,7 @@ table
 		line-height: 21px
 		min-height: 150px
 		margin-bottom: 15px
+		font-family: "Roboto", sans-serif
 .border-top
 	border-top: 1px solid rgba(#bbbbbb, 0.5)
 	padding-top: 30px
@@ -1146,8 +1180,7 @@ table
 			min-height: 23px
 			display: flex
 			align-items: center
-			cursor: pointer
-
+			position: relative
 			&:hover
 				.general-header-path
 					fill: #fff
@@ -1202,6 +1235,49 @@ table
 				transition: color .5s ease
 				&:hover
 					color: #F4F7FE
+		&-droplist
+			position: absolute
+			top: 45px
+			right: 0
+			background: #fff
+			width: 150px
+			display: none
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			&_big
+				width: 200px
+				top: 15px
+				left: 0
+		&-dropitem
+			position: relative
+			height: 24px
+			line-height: 24px
+			border-top: 1px solid rgba(132, 132, 132, 0.3)
+			padding-left: 10px
+			font-size: 14px
+			a
+				color: inherit
+				text-decoration: none
+			&:first-child
+				border-top: none
+			&:hover
+				background: darken(#fff, 5%)
+		&-dropsublist
+			position: absolute
+			left: -150px
+			top: 0
+			display: none
+			width: 150px
+			background: #fff
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			&_right
+				left: 200px
+		&-dropsubitem
+			border-top: 1px solid rgba(132, 132, 132, 0.3)
+			padding-left: 10px
+			&:first-child
+				border-top: none
+			&:hover
+				background: darken(#fff, 5%)
 	&-main
 		margin-top: 40px
 	&-left
@@ -1210,14 +1286,68 @@ table
 			background: #fff
 			border-radius: 5px 5px 0 0
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			&_menu
+				border-radius: 5px
+				margin-top: 30px
+				overflow: hidden
+		&-list
+			&_hide
+				display: none
+		&-item
+			font-size: 16px
+			font-weight: bold
+			border-top: 1px solid rgba(112, 112, 112, 0.30)
+			position: relative
+			&:first-child
+				border: none
+			&:hover, &.active
+				background: #1C3D77
+				color: #fff
+			&-btn
+				height: 40px
+				line-height: 40px
+				width: 100%
+				display: block
+				padding-left: 20px
+				cursor: pointer
+				a
+					display: block
+					color: inherit
+					text-decoration: none
+			&-svg
+				width: 9px
+				transform: rotate(-90deg)
+				position: absolute
+				right: 20px
+				top: 18px
+				transition: transform .5s ease
+
+		&-sublist
+			display: none
+		&-sub-item
+			height: 40px
+			line-height: 40px
+			cursor: pointer
+			padding-left: 20px
+			background: #E2E2E2
+			border-top: 1px solid rgba(112, 112, 112, 0.3)
+			color: #424242
+			&.active
+				background: lighten(#E2E2E2, 5%)
+			a
+				color: inherit
+				text-decoration: none
+			&:hover
+				background: lighten(#E2E2E2, 5%)
 		&-block
-			padding: 0px 20px 20px 20px
+			padding: 0px 20px 10px 20px
 			&_network
 				padding-bottom: 10px
 		&-title
 			font-size: 16px
 			font-weight: bold
 			text-align: center
+			margin-bottom: 10px
 		&-button
 			&-svg
 				width: 9px
@@ -1449,7 +1579,7 @@ table
 			font-size: 16px
 			font-weight: bold
 			padding: 20px 20px
-			border-bottom: 1px solid #585858
+			border-bottom: 1px solid rgba(88, 88, 88, 0.30)
 		&-main
 			padding: 20px
 		&-row
@@ -1526,7 +1656,7 @@ table
 			display: flex
 			justify-content: flex-start
 			align-items: center
-			border-bottom: 1px solid #707070
+			border-bottom: 1px solid rgba(132, 132, 132, 0.3)
 		&-more
 			top: 20px
 			right: 25px
@@ -1591,8 +1721,20 @@ table
 		display: flex
 		justify-content: flex-start
 		padding: 25px 20px 5px
-		border-top: 1px solid #707070
+		border-top: 1px solid rgba(132, 132, 132, 0.3)
 		margin-top: 20px
+		&-btn
+			text-align: right
+			padding: 10px 20px
+		&-textarea
+			font-family: "Ronoto", sans-serif
+			resize: none
+			width: 100%
+			min-height: 80px
+			outline: none
+			padding: 10px
+			border: 1px solid #707070
+			border-radius: 2px
 		&-border
 			border-right: 1px solid #9E9E9E
 			padding: 3px 10px 1px
@@ -1619,7 +1761,14 @@ table
 			margin-left: 10px
 			color: #9E9E9E
 			font-size: 14px
-
+.general-left-item.active
+	.general-left-item-svg
+		transform: rotate(0deg)
+		.general-left-button-path
+			fill: #fff
+.general-left-item:hover
+	.general-left-button-path
+		fill: #fff
 .img-like
 	width: 16px
 .img-comments
@@ -1628,13 +1777,14 @@ table
 	width: 12px
 .img-answer
 	width: 20px
+
 .left
 	&-team
 		&-title
 			font-size: 16px
 			font-weight: bold
 			padding: 15px 20px
-			border-bottom: 1px solid #707070
+			border-bottom: 1px solid rgba(132, 132, 132, 0.3)
 		&-row
 			display: flex
 			justify-content: flex-start
@@ -1769,6 +1919,8 @@ table
 			height: 40px
 			line-height: 40px
 			margin-top: 20px
+		&-description
+			margin-top: 30px
 	&-icon
 		width: 67px
 		margin-top: 25px
@@ -1835,27 +1987,56 @@ table
 		background-color: lighten(#424242, 10%)
 .mCustomScrollBox, .mCSB_container
 	overflow-x: visible !important
-.mCustomScrollBox
-	//padding: 10px 0 0 5px
 .popup-title
 	font-weight: bold
 	font-size: 24px
 	margin-bottom: 5px
 .social-input
 	padding-left: 45px
+.social-block
 	margin-bottom: 20px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 38px
+		height: 100%
+		left: 0
+		top: 0
+		background: red
+		border-radius: 5px
 	&_fb
-		background: url(../img/fb-input.svg) no-repeat left center
-		background-size: 40px 40px
+		&:before
+			background: #435F9E url(../img/fb.svg) no-repeat
+			background-size: 30px 30px
+			background-position: bottom right
 	&_tw
-		background: url(../img/tw-input.svg) no-repeat left center
-		background-size: 40px 40px
+		&:before
+			background: #03A9F4 url(../img/tw.svg) no-repeat
+			background-size: 25px 25px
+			background-position: center center
 	&_in
-		background: url(../img/in-input.svg) no-repeat left center
-		background-size: 40px 40px
-	&_pr
-		background: url(../img/pr-input.svg) no-repeat left center
-		background-size: 40px 40px
+		&:before
+			background: #057EBA url(../img/in.svg) no-repeat
+			background-size: 25px 25px
+			background-position: center center
+	&_vm
+		&:before
+			background: #00B0E9 url(../img/vm.svg) no-repeat
+			background-size: 25px 25px
+			background-position: center center
+	&_yo
+		&:before
+			background: #FC0000 url(../img/yo.svg) no-repeat
+			background-size: 25px 25px
+			background-position: center center
+	&_inst
+		&:before
+			background: url(../img/inst.svg), linear-gradient(200deg, #d047d1, #ff0000, #ffff00)
+			background-repeat: no-repeat, no-repeat
+			background-size: 25px 25px, 100%
+			background-position: center center
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_draggerRail
 	width: 10px
 ._mCS_1 .mCSB_dragger .mCSB_dragger_bar
@@ -1903,6 +2084,7 @@ table
 	width: 40px
 	border-radius: 50%
 .network
+	background: #F3F3F3
 	&-container
 		width: 100%
 		max-width: 1440px
@@ -1910,7 +2092,7 @@ table
 		padding: 0 10px
 	&-list
 		margin-top: 20px
-		&:nth-child(1)
+		&:nth-child(2)
 			margin-top: 0
 	&-header
 		background: #fff
@@ -1934,15 +2116,14 @@ table
 			&:hover
 				color: #4D94F4
 				border-bottom: 3px solid #4D94F4
-	&-main
-		background: #F3F3F3
 	&-flex
 		display: flex
 		justify-content: space-between
+		margin-top: 30px
 	&-filter
 		display: flex
 		justify-content: space-between
-		padding: 30px 0 15px
+		padding: 0px 0 15px
 		max-width: 1050px
 		width: 100%
 		&-list
@@ -1953,6 +2134,26 @@ table
 		&-item
 			font-size: 18px
 			font-weight: bold
+			position: relative
+		&-sublist
+			position: absolute
+			right: 0
+			top: 25px
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16)
+			background: #fff
+			width: auto
+			display: none
+			z-index: 5
+		&-subitem
+			font-weight: normal
+			line-height: 24px
+			height: 24px
+			font-size: 14px
+			padding: 0 10px
+			cursor: pointer
+			white-space: nowrap
+			&:hover
+				background: darken(#fff, 5%)
 		&-down
 			display: inline-block
 			border: 5px solid transparent
@@ -2087,4 +2288,10 @@ table
 			padding: 30px 0
 .front-form-radio:checked ~ .general-top-check
 	box-shadow: 0 0 0 3px #fff, 0 0 0 4px #9F9F9F
+.general-header-dropitem:hover .general-header-dropsublist
+	display: block
+.user
+	&-container
+		width: 100%
+		max-width: 1440px
 @import "media" // Всегда в конце
