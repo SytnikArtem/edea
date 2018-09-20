@@ -50,9 +50,17 @@ $(document).ready(function() {
       $('.popup').fadeOut();
     });
     $('.info-item').click(function() {
-      let idexMenu = $(this).index();
+      let indexMenu = $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
-      $('.edit-content').eq(idexMenu).fadeIn().siblings().fadeOut();
+      $(this).closest('.edit-container').find('.edit-content').eq(indexMenu).fadeIn().siblings().fadeOut();
+      if (indexMenu > 0 && $(this).closest('.team').length > 0) {
+        $(this).closest('.edit-left').find('.edit-photo-circle').addClass('team');
+        $(this).closest('.edit-left').find('.general-left-teamtitle').addClass('team');
+      }
+      else {
+        $(this).closest('.edit-left').find('.edit-photo-circle').removeClass('team');
+        $(this).closest('.edit-left').find('.general-left-teamtitle').removeClass('team');
+      }
     });
     $('.edit-more').click(function() {
       $(this).parent().find('.edit-photo-list').fadeToggle();
@@ -115,6 +123,7 @@ $(document).ready(function() {
     }
   });
     $('#options').ddslick();
+    $('#options2').ddslick();
     $('.general-left-item-btn').click(function() {
       $(this).closest('.general-left-item').toggleClass('active').siblings().removeClass('active');
       $('.general-left-item').find('.general-left-sublist').slideUp();
