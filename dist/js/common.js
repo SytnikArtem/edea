@@ -70,6 +70,7 @@ $(document).ready(function() {
     });
     $('.general-top-img').click(function() {
       $('.up-photo').fadeIn();
+      console.log('ww');
     });
     $('.ins-video').click(function(e){
       let elem = $(".ins-video-container");
@@ -96,6 +97,10 @@ $(document).ready(function() {
     });
     $(".up-photo-list").mCustomScrollbar({
       theme:"my-theme",
+      scrollEasing:"lineaar"
+    });
+    $(".message-list, .message-chat-scroll").mCustomScrollbar({
+      theme:"chat-list",
       scrollEasing:"lineaar"
     });
     $('.general-center-item').click(function() {
@@ -154,6 +159,52 @@ $(document).ready(function() {
     if(e.target!=elem[0]&&!elem.has(e.target).length)
     {
       $('.invite').fadeOut();
+    }
+  });
+  $('.team-switch-label').click(function() {
+    $('.team-popup').fadeIn();
+  });
+  $('.team-popup-btn').click(function() {
+    $('.team-popup').fadeOut();
+  });
+  $('.team-popup').click(function(e){
+    let elem = $(".team-popup-container");
+    if(e.target!=elem[0]&&!elem.has(e.target).length)
+    {
+      $('.team-popup').fadeOut();
+    }
+  });
+  $('.project-popup-btn').click(function() {
+    $('.project-popup').fadeIn();
+  });
+  $('.project-popup').click(function(e){
+    let elem = $(".project-popup-container");
+    if(e.target!=elem[0]&&!elem.has(e.target).length)
+    {
+      $('.project-popup').fadeOut();
+    }
+  });
+  $('.user-menu-item').click(function() {
+    let indexMenu = $(this).index();
+    $(this).addClass('active').siblings().removeClass('active');
+    $(this).closest('.user-right').find('.user-slide').eq(indexMenu).fadeIn().siblings().fadeOut();
+  });
+  $('.compose-item').click(function() {
+    let indexMenu = $(this).index();
+    $(this).closest('.edit-content').find('.edit-content-change').eq(indexMenu).fadeIn().siblings().fadeOut();
+  });
+  $('.edit-btn_cumpose').click(function() {
+    $(this).closest('.edit-content').fadeOut().next().fadeIn();
+  });
+  $('.edit-btn_back').click(function() {
+    $(this).closest('.edit-content').fadeOut().prev().fadeIn();
+  });
+  $('.message-checkbox_all').click(function() {
+    if($(this).is(':checked')) {
+      $('.message-checkbox_item').prop('checked', true);
+    }
+    else {
+      $('.message-checkbox_item').prop('checked', false);
     }
   });
 });
