@@ -50,9 +50,17 @@ $(document).ready(function() {
       $('.popup').fadeOut();
     });
     $('.info-item').click(function() {
-      let idexMenu = $(this).index();
+      let indexMenu = $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
-      $('.edit-content').eq(idexMenu).fadeIn().siblings().fadeOut();
+      $(this).closest('.edit-container').find('.edit-content').eq(indexMenu).fadeIn().siblings().fadeOut();
+      if (indexMenu > 0 && $(this).closest('.team').length > 0) {
+        $(this).closest('.edit-left').find('.edit-photo-circle').addClass('team');
+        $(this).closest('.edit-left').find('.general-left-teamtitle').addClass('team');
+      }
+      else {
+        $(this).closest('.edit-left').find('.edit-photo-circle').removeClass('team');
+        $(this).closest('.edit-left').find('.general-left-teamtitle').removeClass('team');
+      }
     });
     $('.edit-more').click(function() {
       $(this).parent().find('.edit-photo-list').fadeToggle();
@@ -62,9 +70,10 @@ $(document).ready(function() {
     });
     $('.general-top-img').click(function() {
       $('.up-photo').fadeIn();
+      console.log('ww');
     });
     $('.ins-video').click(function(e){
-      var elem = $(".ins-video-container");
+      let elem = $(".ins-video-container");
       if(e.target!=elem[0]&&!elem.has(e.target).length)
       {
         $('.ins-video').fadeOut();
@@ -74,7 +83,7 @@ $(document).ready(function() {
         $('.ins-video').fadeOut();
     });
     $('.up-photo').click(function(e){
-      var elem = $(".up-photo-container");
+      let elem = $(".up-photo-container");
       if(e.target!=elem[0]&&!elem.has(e.target).length)
       {
         $('.up-photo').fadeOut();
@@ -88,6 +97,10 @@ $(document).ready(function() {
     });
     $(".up-photo-list").mCustomScrollbar({
       theme:"my-theme",
+      scrollEasing:"lineaar"
+    });
+    $(".message-list, .message-chat-scroll").mCustomScrollbar({
+      theme:"chat-list",
       scrollEasing:"lineaar"
     });
     $('.general-center-item').click(function() {
@@ -115,6 +128,7 @@ $(document).ready(function() {
     }
   });
     $('#options').ddslick();
+    $('#options2').ddslick();
     $('.general-left-item-btn').click(function() {
       $(this).closest('.general-left-item').toggleClass('active').siblings().removeClass('active');
       $('.general-left-item').find('.general-left-sublist').slideUp();
@@ -130,7 +144,67 @@ $(document).ready(function() {
       $(this).closest('.general-left-block').find('.general-left-list').slideToggle();
     });
   $('.general-left-button-svg.filter').click(function() {
-    $('.network-filter-sublist').slideUp();
+    // $('.network-filter-sublist').slideUp();
     $(this).next().slideToggle();
+  });
+  $('.user-left-more').click(function() {
+    $(this).prev().toggleClass('active');
+    $(this).closest('.user-left-second').siblings().find('.user-left-more').prev().removeClass('active');
+  });
+  $('.general-center-invite-btn').click(function() {
+    $('.invite').fadeIn();
+  });
+  $('.invite').click(function(e){
+    let elem = $(".invite-container");
+    if(e.target!=elem[0]&&!elem.has(e.target).length)
+    {
+      $('.invite').fadeOut();
+    }
+  });
+  $('.team-switch-label').click(function() {
+    $('.team-popup').fadeIn();
+  });
+  $('.team-popup-btn').click(function() {
+    $('.team-popup').fadeOut();
+  });
+  $('.team-popup').click(function(e){
+    let elem = $(".team-popup-container");
+    if(e.target!=elem[0]&&!elem.has(e.target).length)
+    {
+      $('.team-popup').fadeOut();
+    }
+  });
+  $('.project-popup-btn').click(function() {
+    $('.project-popup').fadeIn();
+  });
+  $('.project-popup').click(function(e){
+    let elem = $(".project-popup-container");
+    if(e.target!=elem[0]&&!elem.has(e.target).length)
+    {
+      $('.project-popup').fadeOut();
+    }
+  });
+  $('.user-menu-item').click(function() {
+    let indexMenu = $(this).index();
+    $(this).addClass('active').siblings().removeClass('active');
+    $(this).closest('.user-right').find('.user-slide').eq(indexMenu).fadeIn().siblings().fadeOut();
+  });
+  $('.compose-item').click(function() {
+    let indexMenu = $(this).index();
+    $(this).closest('.edit-content').find('.edit-content-change').eq(indexMenu).fadeIn().siblings().fadeOut();
+  });
+  $('.edit-btn_cumpose').click(function() {
+    $(this).closest('.edit-content').fadeOut().next().fadeIn();
+  });
+  $('.edit-btn_back').click(function() {
+    $(this).closest('.edit-content').fadeOut().prev().fadeIn();
+  });
+  $('.message-checkbox_all').click(function() {
+    if($(this).is(':checked')) {
+      $('.message-checkbox_item').prop('checked', true);
+    }
+    else {
+      $('.message-checkbox_item').prop('checked', false);
+    }
   });
 });

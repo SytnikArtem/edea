@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.068 7.841">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #9e9e9e;
-      }
-    </style>
-  </defs>
-  <g id="if_icon-ios7-arrow-down_211687" transform="translate(-595 -658.159)">
-    <path id="if_icon-ios7-arrow-down_211687-2" data-name="if_icon-ios7-arrow-down_211687" class="cls-1" d="M108.276,160l.792.845-6.534,7-6.534-7,.788-.845,5.746,6.146Z" transform="translate(499 498.159)"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.068 7.841"><path data-name="if_icon-ios7-arrow-down_211687" d="M12.276 0l.792.845-6.534 7L0 .845.788 0l5.746 6.146z" fill="#9e9e9e"/></svg>

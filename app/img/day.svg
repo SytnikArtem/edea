@@ -1,16 +1,1 @@
-<svg id="Group_3954" data-name="Group 3954" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.146 17.147">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #9e9e9e;
-      }
-    </style>
-  </defs>
-  <path id="Path_24910" data-name="Path 24910" class="cls-1" d="M14.952,2.058h-.823V1.235A1.05,1.05,0,0,0,13.032,0,1.229,1.229,0,0,0,11.8,1.235v.823H5.213V1.235A1.209,1.209,0,0,0,4.115,0,1.326,1.326,0,0,0,2.881,1.235v.823H2.058A2.02,2.02,0,0,0,0,4.115V15.089a2.11,2.11,0,0,0,2.058,2.058H15.089a2.11,2.11,0,0,0,2.058-2.058V4.115A2.137,2.137,0,0,0,14.952,2.058Zm0,12.483a.364.364,0,0,1-.412.412H2.469a.364.364,0,0,1-.412-.412V6.447a.364.364,0,0,1,.412-.412H14.678a.364.364,0,0,1,.412.412v8.093Z"/>
-  <ellipse id="Ellipse_547" data-name="Ellipse 547" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(3.978 8.093)"/>
-  <ellipse id="Ellipse_548" data-name="Ellipse 548" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(3.978 11.386)"/>
-  <ellipse id="Ellipse_549" data-name="Ellipse 549" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(7.682 8.093)"/>
-  <ellipse id="Ellipse_550" data-name="Ellipse 550" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(7.682 11.386)"/>
-  <ellipse id="Ellipse_551" data-name="Ellipse 551" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(11.386 8.093)"/>
-  <ellipse id="Ellipse_552" data-name="Ellipse 552" class="cls-1" cx="0.823" cy="0.823" rx="0.823" ry="0.823" transform="translate(11.386 11.386)"/>
-</svg>
+<svg id="Group_3954" data-name="Group 3954" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.146 17.147"><defs><style>.cls-1{fill:#9e9e9e}</style></defs><path id="Path_24910" data-name="Path 24910" class="cls-1" d="M14.952 2.058h-.823v-.823A1.05 1.05 0 0 0 13.032 0 1.229 1.229 0 0 0 11.8 1.235v.823H5.213v-.823A1.209 1.209 0 0 0 4.115 0a1.326 1.326 0 0 0-1.234 1.235v.823h-.823A2.02 2.02 0 0 0 0 4.115v10.974a2.11 2.11 0 0 0 2.058 2.058h13.031a2.11 2.11 0 0 0 2.058-2.058V4.115a2.137 2.137 0 0 0-2.195-2.057zm0 12.483a.364.364 0 0 1-.412.412H2.469a.364.364 0 0 1-.412-.412V6.447a.364.364 0 0 1 .412-.412h12.209a.364.364 0 0 1 .412.412v8.093z"/><ellipse id="Ellipse_547" data-name="Ellipse 547" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(3.978 8.093)"/><ellipse id="Ellipse_548" data-name="Ellipse 548" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(3.978 11.386)"/><ellipse id="Ellipse_549" data-name="Ellipse 549" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(7.682 8.093)"/><ellipse id="Ellipse_550" data-name="Ellipse 550" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(7.682 11.386)"/><ellipse id="Ellipse_551" data-name="Ellipse 551" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(11.386 8.093)"/><ellipse id="Ellipse_552" data-name="Ellipse 552" class="cls-1" cx=".823" cy=".823" rx=".823" ry=".823" transform="translate(11.386 11.386)"/></svg>
