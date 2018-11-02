@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.26 51.806">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 2.5px;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_6366" data-name="Group 6366" transform="translate(-1327.75 -632.494)">
+    <line id="Line_1" data-name="Line 1" class="cls-1" y1="29.931" transform="translate(1336.39 633.744)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" y1="4.587" transform="translate(1336.39 678.463)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" y1="17.255" transform="translate(1356.88 633.744)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-1" y1="17.255" transform="translate(1356.88 665.793)"/>
+    <line id="Line_5" data-name="Line 5" class="cls-1" y1="4.936" transform="translate(1377.369 633.744)"/>
+    <line id="Line_6" data-name="Line 6" class="cls-1" y1="29.582" transform="translate(1377.369 653.467)"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="7.397" cy="7.397" rx="7.397" ry="7.397" transform="translate(1329 663.676)"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="7.397" cy="7.397" rx="7.397" ry="7.397" transform="translate(1349.482 651)"/>
+    <path id="Path_25942" data-name="Path 25942" class="cls-2" d="M7.4,0A7.4,7.4,0,1,1,0,7.4,7.4,7.4,0,0,1,7.4,0Z" transform="translate(1369.964 638.674)"/>
+  </g>
+</svg>

@@ -4,6 +4,14 @@ $(document).ready(function() {
       e.preventDefault();
       $('.enter').fadeOut();
       $(this).closest('.js-active').fadeOut().removeClass('active').next().fadeIn().addClass('active');
+      let windowHeight = $(window).height();
+      let height = $('.js-active.active').height() + 100;
+      if (windowHeight < height && $(window).width() > 993) {
+        $('.main').height(height);
+      }
+    });
+    $('.btn-click_last').click(function(){
+      $('.main').height('100vh');
     });
     var counter = 0;
     $('.front-form-btn').click(function(e) {
@@ -12,12 +20,32 @@ $(document).ready(function() {
       var stepNumber = $('.progress-text-number').text();
       if($(this).hasClass('front-form-btn_back')) {
         counter = counter - 1;
+        if (counter == 0) {
+          $('.front-first').removeClass('counter1');
+        }
+        if (counter == 1) {
+          $('.front-first').removeClass('counter2');
+        }
+        if (counter == 2) {
+          $('.front-first').removeClass('counter3');
+        }
         $(this).closest('.front-main').fadeOut().prev().fadeIn();
         $(this).closest('.front-left').find('.progress-item.active').eq(+stepNumber - 1).removeClass('active');
         $('.progress-text-number').text(+stepNumber - 1);
       }
       else {
-        counter ++
+        counter ++;
+        if (counter == 1) {
+          $('.front-first').addClass('counter1');
+        }
+        if (counter == 2) {
+          $('.front-first').addClass('counter2');
+        }
+        if (counter == 3) {
+          $('.front-first').addClass('counter3');
+        }
+        $(this).closest('.front-main').removeClass('active');
+        $(this).closest('.front-main').next().addClass('active');
         $(this).closest('.front-main').fadeOut().next().fadeIn();
         $(this).closest('.front-left').find('.progress-item.active').next().addClass('active');
         $('.progress-text-number').text(+stepNumber + 1);
@@ -25,10 +53,23 @@ $(document).ready(function() {
     });
     $('.services-btn').click(function() {
       $('.popup-first').fadeIn();
-    })
+      $('.fixed-header').addClass('index-fix')
+    });
+    $('.services-close').click(function(){
+      $('.popup-first').fadeOut();
+      $('.fixed-header').removeClass('index-fix')
+    });
+  $('.services2-close').click(function(){
+    $('.popup-second').fadeOut();
+  });
+  $('.skills-close').click(function(){
+    $('.popup-third').fadeOut();
+    $('.fixed-header').removeClass('index-fix')
+  });
     $('.skills-btn').click(function() {
       $('.popup-third').fadeIn();
-    })
+      $('.fixed-header').addClass('index-fix')
+    });
     $('.popup-third-btn').click(function() {
       $(this).closest('.popup').fadeOut();
     });
@@ -52,7 +93,7 @@ $(document).ready(function() {
     $('.info-item').click(function() {
       let indexMenu = $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
-      $(this).closest('.edit-container').find('.edit-content').eq(indexMenu).fadeIn().siblings().fadeOut();
+      $(this).closest('.edit').find('.edit-content').eq(indexMenu).fadeIn().siblings().fadeOut();
       if (indexMenu > 0 && $(this).closest('.team').length > 0) {
         $(this).closest('.edit-left').find('.edit-photo-circle').addClass('team');
         $(this).closest('.edit-left').find('.general-left-teamtitle').addClass('team');
@@ -60,6 +101,12 @@ $(document).ready(function() {
       else {
         $(this).closest('.edit-left').find('.edit-photo-circle').removeClass('team');
         $(this).closest('.edit-left').find('.general-left-teamtitle').removeClass('team');
+      }
+      if ($(this).hasClass('mob-edit-item') && $(this).index() > 0) {
+        $('.edit-left').fadeOut();
+      }
+      else {
+        $('.edit-left').fadeIn();
       }
     });
     $('.edit-more').click(function() {
