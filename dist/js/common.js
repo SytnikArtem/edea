@@ -76,14 +76,12 @@ $(document).ready(function() {
     $('.popup-first-link').click(function(e) {
       e.preventDefault();
       let itemIndex = $(this).closest('.popup-first-item').index();
-      console.log(itemIndex);
       $('.popup-second-item').eq(itemIndex).addClass('active').siblings().removeClass('active');
       $('.content-item').eq(itemIndex).fadeIn().siblings().fadeOut();
       $('.popup-second').fadeIn();
     });
     $('.popup-second-item').click(function() {
       let clickIndex =   $(this).index();
-      console.log(clickIndex);
       $(this).addClass('active').siblings().removeClass('active');
       $('.content-item').eq(clickIndex).fadeIn().siblings().fadeOut();
     });
@@ -117,7 +115,6 @@ $(document).ready(function() {
     });
     $('.general-top-img').click(function() {
       $('.up-photo').fadeIn();
-      console.log('ww');
     });
     $('.ins-video').click(function(e){
       let elem = $(".ins-video-container");
@@ -154,7 +151,6 @@ $(document).ready(function() {
 
       $(this).addClass('active').siblings().removeClass('active');
       let index = $(this).index();
-      console.log(index);
       $('.general-top-change').eq(index).show().siblings().hide();
 
       var height = $('.general-top-change').eq(index).height();
@@ -253,5 +249,30 @@ $(document).ready(function() {
     else {
       $('.message-checkbox_item').prop('checked', false);
     }
+  });
+  $('.btn-portfolio.portfolio-user').click(function(){
+    $('.portfolio-popup.popup-user').addClass('active');
+  });
+  $('.btn-portfolio.portfolio-team').click(function(){
+    $('.portfolio-popup.popup-team').addClass('active');
+  });
+  $('.portfolio-close').click(function(){
+    $('.portfolio-popup').removeClass('active');
+  });
+  $('.user .portfolio-popup-item').click(function(){
+    $('.user .user-right').addClass('active');
+    let index = $(this).index();
+    $('.user .user-slide').removeClass('active');
+    $('.user .user-slide').eq(index + 1).addClass('active');
+  });
+  $('.company .portfolio-popup-item').click(function(){
+    $('.company .user-right').addClass('active');
+    let index = $(this).index();
+    $('.company .user-slide').removeClass('active');
+    $('.company .user-slide').eq(index + 1).addClass('active');
+  });
+  $('.portfolio-item-close').click(function(){
+    $('.user-right').removeClass('active');
+    $('.user-slide').removeClass('active');
   });
 });
