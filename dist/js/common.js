@@ -77,13 +77,14 @@ $(document).ready(function() {
       e.preventDefault();
       let itemIndex = $(this).closest('.popup-first-item').index();
       $('.popup-second-item').eq(itemIndex).addClass('active').siblings().removeClass('active');
-      $('.content-item').eq(itemIndex).fadeIn().siblings().fadeOut();
+      // $('.content-item').eq(itemIndex).fadeIn().siblings().fadeOut();
+      $('.content-item').eq(itemIndex).addClass('active').siblings().removeClass('active');
       $('.popup-second').fadeIn();
     });
     $('.popup-second-item').click(function() {
       let clickIndex =   $(this).index();
       $(this).addClass('active').siblings().removeClass('active');
-      $('.content-item').eq(clickIndex).fadeIn().siblings().fadeOut();
+      $('.content-item').eq(clickIndex).addClass('active').siblings().removeClass('active');
     });
     $('.content-right-btn').click(function() {
       $('.popup').fadeOut();
@@ -235,12 +236,22 @@ $(document).ready(function() {
   $('.compose-item').click(function() {
     let indexMenu = $(this).index();
     $(this).closest('.edit-content').find('.edit-content-change').eq(indexMenu).fadeIn().siblings().fadeOut();
+    if (indexMenu == 0) {
+      $(this).closest('.edit-block').find('.edit-subtitle_compose').text('Find the right professional to strengthen your team')
+    }
+    else if (indexMenu == 1) {
+      $(this).closest('.edit-block').find('.edit-subtitle_compose').text('What type of contracting  option would suit you?')
+    }
   });
   $('.edit-btn_cumpose').click(function() {
     $(this).closest('.edit-content').fadeOut().next().fadeIn();
   });
   $('.edit-btn_back').click(function() {
     $(this).closest('.edit-content').fadeOut().prev().fadeIn();
+  });
+  $('.job-close').click(function(){
+    $(this).closest('.compose').find('.edit-content').eq(1).fadeOut();
+    $(this).closest('.compose').find('.edit-content').eq(0).fadeIn();
   });
   $('.message-checkbox_all').click(function() {
     if($(this).is(':checked')) {
