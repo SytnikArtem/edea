@@ -141,10 +141,13 @@ $(document).ready(function() {
         $('.up-photo').fadeOut();
     });
     $(".up-photo-list").mCustomScrollbar({
-      theme:"my-theme",
-      scrollEasing:"lineaar"
+        theme:"my-theme",
+        scrollEasing:"lineaar"
     });
-    $(".message-list, .message-chat-scroll").mCustomScrollbar({
+    if($(window).width() < 993) {
+        $(".up-photo-list").mCustomScrollbar("destroy");
+    }
+     $(".message-list, .message-chat-scroll").mCustomScrollbar({
       theme:"chat-list",
       scrollEasing:"lineaar"
     });
@@ -288,5 +291,13 @@ $(document).ready(function() {
   });
   $('.menu-open').click(function(){
     $('.general-menu').toggleClass('active');
-  })
+  });
+  $('.compose-open').click(function(){
+    $('.general-compose').addClass('active');
+  });
+  $('.general-compose-link').click(function(e){
+    e.preventDefault();
+    $('.general-compose-list').addClass('hide');
+    $('.general-top-block').addClass('active');
+  });
 });
