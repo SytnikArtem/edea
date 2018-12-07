@@ -286,4 +286,7 @@ $(document).ready(function() {
     $('.user-right').removeClass('active');
     $('.user-slide').removeClass('active');
   });
+  $('.menu-open').click(function(){
+    $('.general-menu').toggleClass('active');
+  })
 });

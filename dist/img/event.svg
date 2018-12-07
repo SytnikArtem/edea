@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.544 47.618">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #157efb;
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="if_calendar-80px_510932" transform="translate(-14.331 -14.25)">
+    <path id="Path_27279" data-name="Path 27279" class="cls-1" d="M57.435,19.655H51.9V15H47.289v4.655H28.842V15H24.23v4.655H18.77a3.69,3.69,0,0,0-3.689,3.689V57.429a3.69,3.69,0,0,0,3.689,3.689H57.435a3.69,3.69,0,0,0,3.689-3.689V23.345A3.69,3.69,0,0,0,57.435,19.655Zm-.922,36.851H19.618V33.447H56.513Zm0-27.671H19.618V24.224H56.513Z"/>
+    <rect id="Rectangle_4762" data-name="Rectangle 4762" class="cls-1" width="4.612" height="4.612" transform="translate(36.221 38.059)"/>
+    <rect id="Rectangle_4763" data-name="Rectangle 4763" class="cls-1" width="4.612" height="4.612" transform="translate(45.444 38.059)"/>
+    <rect id="Rectangle_4764" data-name="Rectangle 4764" class="cls-1" width="4.612" height="4.612" transform="translate(36.221 47.283)"/>
+    <rect id="Rectangle_4765" data-name="Rectangle 4765" class="cls-1" width="4.612" height="4.612" transform="translate(26.997 47.283)"/>
+  </g>
+</svg>

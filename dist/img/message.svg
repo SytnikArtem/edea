@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.748 50.561">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #157efb;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="if_Messages_206461" transform="translate(1.5 1.5)">
+    <g id="Layer_2" transform="translate(20.249 13.44)">
+      <path id="Path_27134" data-name="Path 27134" class="cls-1" d="M133.2,110.7H100.8a4.05,4.05,0,0,0-4.05,4.05v18.9a4.05,4.05,0,0,0,4.05,4.05h1.816l4.122,3.121,3.279,2.483v-5.6H133.2a4.051,4.051,0,0,0,4.05-4.05v-18.9A4.051,4.051,0,0,0,133.2,110.7Z" transform="translate(-96.75 -110.703)"/>
+    </g>
+    <g id="Layer_3" transform="translate(0 0)">
+      <path id="Path_27133" data-name="Path 27133" class="cls-2" d="M70.7,69.22H38.3a4.05,4.05,0,0,0-4.05,4.05v18.9a4.05,4.05,0,0,0,4.05,4.05h2.793v5.6l7.4-5.6H70.7a4.051,4.051,0,0,0,4.05-4.05V73.27A4.051,4.051,0,0,0,70.7,69.22Z" transform="translate(-34.25 -69.22)"/>
+    </g>
+  </g>
+</svg>
