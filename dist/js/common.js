@@ -317,4 +317,8 @@ $(document).ready(function() {
           $('.general-top-label').fadeOut();
       }
   });
+  $('.user-mob-btn').click(function(){
+    $(this).parent().parent().siblings().show();
+    $(this).parent().parent().hide();
+  });
 });
