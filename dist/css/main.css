@@ -6078,7 +6078,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
     align-items: center;
     order: 2;
     padding: 10px 50px;
-    border: 1px solid #DEDEDE;
+    /*border: 1px solid #DEDEDE;*/
     border-radius: 5px;
     margin: 20px 0 10px;
   }
@@ -6119,7 +6119,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
     padding: 0 15px 20px;
     width: calc(100% + 30px);
     margin-left: -15px;
-    border-bottom: 1px solid rgba(132, 132, 132, 0.3);
+    /*border-bottom: 1px solid rgba(132, 132, 132, 0.3);*/
   }
   .user-reviews-list {
     width: calc(100% + 30px);
@@ -6469,6 +6469,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
   }
   .jobs-row-right_center {
     justify-content: space-between;
+  }
+  .edit .container_nomarg .edit-select_min {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
