@@ -5691,10 +5691,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: #ffffff;
     z-index: 2;
     padding-top: 66px;
+    overflow: scroll;
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all .5s ease;
@@ -5704,6 +5705,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
   .general-menu.active {
     opacity: 1;
     pointer-events: auto;
+  }
+  .general-left-item {
+    border-top: 1px solid rgba(112, 112, 112, 0.36)
   }
   .general-menu-top {
     display: -webkit-box;
@@ -5741,12 +5745,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
     padding-left: 20px;
   }
   .general-left-item-btn {
-    height: 55px;
-    line-height: 55px;
+    height: 50px;
+    line-height: 50px;
   }
   .general-left-sub-item {
-    height: 55px;
-    line-height: 55px;
+    height: 50px;
+    line-height: 50px;
   }
   .general-fixed, .general-menu {
     display: block;
