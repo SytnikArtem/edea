@@ -6,7 +6,7 @@ $(document).ready(function() {
       $(this).closest('.js-active').fadeOut().removeClass('active').next().fadeIn().addClass('active');
       let windowHeight = $(window).height();
       let height = $('.js-active.active').height() + 100;
-      if (windowHeight < height && $(window).width() > 993) {
+      if (windowHeight < height && $(window).width() > 994) {
         $('.main').height(height);
       }
     });
@@ -144,13 +144,14 @@ $(document).ready(function() {
         theme:"my-theme",
         scrollEasing:"lineaar"
     });
-    if($(window).width() < 993) {
-        $(".up-photo-list").mCustomScrollbar("destroy");
-    }
      $(".message-list, .message-chat-scroll").mCustomScrollbar({
       theme:"chat-list",
       scrollEasing:"lineaar"
     });
+    if($(window).width() < 994) {
+      $(".up-photo-list").mCustomScrollbar("destroy");
+      $(".message-list, .message-chat-scroll").mCustomScrollbar("destroy");
+    }
     $('.general-center-item').click(function() {
 
       $(this).addClass('active').siblings().removeClass('active');
@@ -321,4 +322,57 @@ $(document).ready(function() {
     $(this).parent().parent().siblings().show();
     $(this).parent().parent().hide();
   });
+  $('.edit_btn').click(function(){
+    $('.message-label_list').show();
+    $('.second-step').show();
+    $('.first-step').hide();
+  });
+  $('.done_btn').click(function(){
+    $('.message-label_list').hide();
+    $('.second-step').hide();
+    $('.first-step').show();
+    $('.message-list-hide').hide();
+    $('.message-checkbox_item').prop('checked', false);
+    $('.delete_btn, .block_btn').removeClass('active');
+  });
+  $('.message-checkbox_item').click(function(){
+    if($('.message-checkbox_item').is(':checked')){
+      $('.delete_btn, .block_btn').addClass('active');
+    }
+    else {
+      $('.delete_btn, .block_btn').removeClass('active');
+    }
+  });
+  $('.delete_btn, .block_btn').click(function(){
+    if($('.message-checkbox_item').is(':checked')){
+      $('.delete_btn, .block_btn').addClass('active');
+      $(this).removeClass('active');
+      $('.message-checkbox_item').closest('.message-list-item').find('.message-list-hide').hide();
+      $('.message-checkbox_item:checked').closest('.message-list-item').find('.message-list-hide').show();
+    }
+  });
+  $('.question-btn').click(function(){
+    $(this).closest('.message-list-hide').hide();
+    $(this).closest('.message-list-item').find('.message-checkbox_item').prop('checked', false);
+    if(!$('.message-checkbox_item').is(':checked')){
+      $('.delete_btn, .block_btn').addClass('active');
+    }
+  });
+  $('.message-tabs-item').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  });
+  $('.message-list-item').swipe({
+    swipeLeft:function(event, direction) {
+      $(this).find('.message-list-flex').addClass('active');
+      $(this).find('.message-actions').addClass('active');
+    },
+    swipeRight:function(event, direction) {
+      $(this).find('.message-list-flex').removeClass('active');
+      $(this).find('.message-actions').removeClass('active');
+    }
+  });
+  // $('.message-list-item.active').swipe({
+  //
+  // });
 });
