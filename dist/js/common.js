@@ -361,6 +361,7 @@ $(document).ready(function() {
   $('.message-tabs-item').click(function(){
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
+    $('.message-list-list').eq($(this).index()).show().siblings().hide();
   });
   $('.message-list-item').swipe({
     swipeLeft:function(event, direction) {
@@ -372,7 +373,4 @@ $(document).ready(function() {
       $(this).find('.message-actions').removeClass('active');
     }
   });
-  // $('.message-list-item.active').swipe({
-  //
-  // });
 });
