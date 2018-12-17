@@ -373,4 +373,7 @@ $(document).ready(function() {
       $(this).find('.message-actions').removeClass('active');
     }
   });
+  $('.project-left-btn').click(function(){
+      $(this).next().addClass('active');
+  });
 });

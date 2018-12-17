@@ -6495,6 +6495,27 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
     top: 0;
     right: 0
   }
+  .article-main {
+    position: relative;
+  }
+  .article-left .network-info_select {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .general-post_two .network-info_select {
+    width: 150px;
+    margin: 0 0 0 10px;
+  }
+  .article-left .general-top-label {
+    display: block;
+  }
+  .article-left .general-top-block {
+    z-index: 2;
+    margin-top: 36px;
+  }
+  .front-form-check {
+    left: 5px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .first-title {
@@ -7124,5 +7145,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
   }
   .general-top-input_link {
     padding-left: 40px;
+  }
+  .front-form-label {
+    font-size: 14px;
+  }
+  .general-top-check {
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+  }
+  .general-top-number {
+    margin-bottom: 10px;
   }
 }
