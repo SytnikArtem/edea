@@ -6511,7 +6511,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none;}
   }
   .article-left .general-top-block {
     z-index: 2;
-    margin-top: 36px;
+    margin-top: 66px;
+    position: fixed;
   }
   .front-form-check {
     left: 5px;
