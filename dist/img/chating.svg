@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.47" height="27.379" viewBox="0 0 34.47 27.379">
+  <g id="Group_7034" data-name="Group 7034" transform="translate(4564.266 2427.368)">
+    <g id="if_Messages_206461" transform="translate(-4564.266 -2427.368)">
+      <g id="Layer_3" transform="translate(0 0)">
+        <path id="Path_27133" data-name="Path 27133" d="M54.332,69.22H36.481a2.231,2.231,0,0,0-2.231,2.231V81.864A2.232,2.232,0,0,0,36.481,84.1H38.02v3.088L42.1,84.1H54.332a2.232,2.232,0,0,0,2.231-2.231V71.451A2.232,2.232,0,0,0,54.332,69.22Z" transform="translate(-34.25 -69.22)" fill="#157efb"/>
+      </g>
+      <g id="Layer_2" transform="translate(11.156 7.405)">
+        <path id="Path_27134" data-name="Path 27134" d="M116.832,110.7H98.981a2.231,2.231,0,0,0-2.231,2.231v10.413a2.232,2.232,0,0,0,2.231,2.231h1l4.078,3.088v-3.088h12.772a2.232,2.232,0,0,0,2.231-2.231V112.934A2.232,2.232,0,0,0,116.832,110.7Z" transform="translate(-96.75 -110.703)" fill="#157efb" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g id="Layer_4" transform="translate(15.219 13.091)">
+        <circle id="Ellipse_617" data-name="Ellipse 617" cx="1.785" cy="1.785" r="1.785" fill="#fff"/>
+        <circle id="Ellipse_618" data-name="Ellipse 618" cx="1.785" cy="1.785" r="1.785" transform="translate(5.386)" fill="#fff"/>
+        <circle id="Ellipse_619" data-name="Ellipse 619" cx="1.785" cy="1.785" r="1.785" transform="translate(10.618)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

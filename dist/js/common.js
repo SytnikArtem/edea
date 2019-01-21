@@ -376,4 +376,24 @@ $(document).ready(function() {
   $('.project-left-btn').click(function(){
       $(this).next().addClass('active');
   });
+
+  /*dropdown notifications*/
+
+
+  $('.general-dropdown-more').click(function(){
+    $(this).closest('.general-dropdown-item').siblings().find('.general-dropdown-list-list').removeClass('active');
+    $(this).find('.general-dropdown-list-list').toggleClass('active');
+  });
+  $(document).mouseup(function (e) {
+    var container = $(".general-header-jingle").parent();
+    if (container.has(e.target).length === 0) {
+      $('.general-dropdown').removeClass('active');
+      $('.general-header-jingle').removeClass('active');
+      $('.general-dropdown-list-list').removeClass('active');
+    }
+  });
+  $('.general-header-jingle').click(function(){
+    $('.general-dropdown').toggleClass('active');
+    $('.general-header-jingle').toggleClass('active');
+  });
 });
