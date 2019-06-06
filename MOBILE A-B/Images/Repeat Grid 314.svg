@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 414 219">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #707070;
+        opacity: 0.36;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="414" height="219"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_314" data-name="Repeat Grid 314" class="cls-2">
+    <g transform="translate(-0.5 -189.5)">
+      <line id="Line_710" data-name="Line 710" class="cls-3" x2="414" transform="translate(0.5 189.5)"/>
+    </g>
+    <g transform="translate(-0.5 -135.5)">
+      <line id="Line_710-2" data-name="Line 710" class="cls-3" x2="414" transform="translate(0.5 189.5)"/>
+    </g>
+    <g transform="translate(-0.5 -81.5)">
+      <line id="Line_710-3" data-name="Line 710" class="cls-3" x2="414" transform="translate(0.5 189.5)"/>
+    </g>
+    <g transform="translate(-0.5 -27.5)">
+      <line id="Line_710-4" data-name="Line 710" class="cls-3" x2="414" transform="translate(0.5 189.5)"/>
+    </g>
+    <g transform="translate(-0.5 26.5)">
+      <line id="Line_710-5" data-name="Line 710" class="cls-3" x2="414" transform="translate(0.5 189.5)"/>
+    </g>
+  </g>
+</svg>
